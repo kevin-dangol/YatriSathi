@@ -1,0 +1,5 @@
+asure, asure@gmail.com, asure123, user
+normaluser,normaluser@gmail.com,normaluser,User
+user,user@gmail.com, user, User
+admin, admin@gmail.com, admin, admin
+guide, guide@gmail.com, guide, Guide

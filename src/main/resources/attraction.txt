@@ -1,0 +1,20 @@
+Pashupatinath Temple, Pashupati Nath Rd, Kathmandu, 1200, 4500, 4.8
+Swayambhunath Stupa, Swayambhu Marg, Kathmandu, 900, 3800, 4.6
+Boudhanath Stupa, Boudha, Kathmandu, 850, 4000, 4.7
+Pokhara Lakeside, Lakeside Rd, Pokhara, 1500, 5200, 4.9
+Chitwan National Park, Sauraha, Chitwan, 600, 3200, 4.5
+Lumbini Sacred Garden, Lumbini, Lumbini, 700, 2800, 4.4
+Annapurna Base Camp, Annapurna Conservation Area, Gandaki, 400, 2000, 4.8
+Everest Base Camp, Khumjung, Khumbu, 300, 1800, 4.9
+Bhaktapur Durbar Square, Durbar Square, Bhaktapur, 500, 2500, 4.6
+Patan Durbar Square, Mangal Bazaar, Lalitpur, 450, 2200, 4.5
+Nagarkot Viewpoint, Nagarkot Rd, Bhaktapur, 650, 3400, 4.7
+Garden of Dreams, Tridevi Marg, Kathmandu, 500, 2900, 4.5
+Phewa Lake, Phewa Marg, Pokhara, 1000, 4600, 4.8
+Kopan Monastery, Boudha, Kathmandu, 550, 3600, 4.6
+Manakamana Temple, Manakamana Rd, Gorkha, 800, 3100, 4.7
+Thamel, Thamel Marg, Kathmandu, 700, 4200, 4.6
+Rara Lake, Rara National Park, Mugu, 400, 2100, 4.8
+Gosainkunda Lake, Gosainkunda, Rasuwa, 450, 2300, 4.7
+Durbar Marg, Durbar Marg, Kathmandu, 600, 3700, 4.5
+Illam Tea Gardens, Illam Bazaar, Illam, 550, 2600, 4.6

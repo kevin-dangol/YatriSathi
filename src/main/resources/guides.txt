@@ -1,0 +1,21 @@
+Ramesh,Shrestha,150,Kamalpokhari,Lumbini,9841234567,2025-08-15,320,4.7
+Sita,Gurung,200,Lakeside,Pokhara,9808765432,2025-08-20,450,4.8
+Hari,Bhandari,100,Narayanghat,Chitwan,9851122334,2025-08-18,250,4.5
+Maya,Tamang,80,Thamel,Kathmandu,9812345678,2025-08-22,200,4.6
+Kumar,Thapa,120,Buddha Nagar,Lumbini,9845678901,2025-08-17,300,4.4
+Laxmi,Adhikari,90,Durbar Marg,Bhaktapur,9801239876,2025-08-16,280,4.7
+Tenzing,Sherpa,250,Solu,Khumbu,9856781234,2025-08-25,400,4.9
+Anita,Karki,130,Krishna Galli,Lalitpur,9843216547,2025-08-19,270,4.6
+Bikram,Rai,70,Phewa Marg,Pokhara,9818765432,2025-08-21,220,4.5
+Sarita,Lama,110,Bagbazar,Kathmandu,9804567890,2025-08-14,350,4.8
+kevin3,Dangol,80,Thamel,Kathmandu,9812345678,2025-08-22,200,4.6
+Rajesh,Magar,140,Chabahil,Kathmandu,9849876543,2025-08-23,310,4.7
+Pema,Sherpa,210,Lukla,Khumbu,9851234567,2025-08-26,410,4.8
+Gita,Rai,90,Lakeside Rd,Pokhara,9807654321,2025-08-24,240,4.5
+Suresh,Tamang,100,Bhaktapur Durbar,Bhaktapur,9844567890,2025-08-20,260,4.6
+Nima,Lama,110,Sauraha,Chitwan,9816543210,2025-08-21,290,4.7
+Dawa,Sherpa,160,Gosainkunda,Rasuwa,9847891234,2025-08-27,330,4.7
+Sunita,Gurung,180,Lakeside Marg,Pokhara,9809876543,2025-08-25,360,4.8
+Prakash,Thapa,120,New Road,Kathmandu,9854567890,2025-08-24,280,4.6
+Kamala,Magar,95,Illam Bazaar,Illam,9813216547,2025-08-26,250,4.5
+Rajan,Bhandari,130,Manakamana Rd,Gorkha,9846543210,2025-08-23,300,4.7
