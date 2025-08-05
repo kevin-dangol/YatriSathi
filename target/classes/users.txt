@@ -1,0 +1,10 @@
+kevin, kevin@gmail.com, kevin123, User
+kevin2, kevin2@gmail.com, kevin1234, Admin
+kevin3, kevin3@gmail.com, kevin12345, Guide
+asure, asure@gmail.com, asure123, user
+normaluser,normaluser@gmail.com,normaluser,User
+user,user@gmail.com, user, User
+admin, admin@gmail.com, admin, admin
+guide, guide@gmail.com, guide, Guide
+BIBUSHA,BIBUSHAgmail.com,bibasduasd,User
+bibusha,bibushagmai.com,asdasdasdasdasd,User

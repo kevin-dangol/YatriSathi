@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.yatrisathi.User.UserBookingController">
+   <left>
+      <AnchorPane prefHeight="720.0" prefWidth="286.0" style="-fx-background-color: #84b08b;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="welcome" layoutX="54.0" layoutY="132.0" text="Welcome" textFill="WHITE">
+               <font>
+                  <Font name="Kosugi Regular" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="User" layoutX="143.0" layoutY="132.0" text=", User!" textFill="WHITE">
+               <font>
+                  <Font name="Kosugi Regular" size="25.0" />
+               </font>
+            </Label>
+            <VBox focusTraversable="true" layoutX="12.0" layoutY="208.0" prefHeight="396.0" prefWidth="259.0" spacing="10.0">
+               <children>
+                  <Label fx:id="home" onMouseClicked="#handleHomeClick" prefHeight="50.0" prefWidth="237.0" style="-fx-background-radius: 5; -fx-cursor: hand;" styleClass="menu-item-selected" text="🏠  Home" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Kosugi Regular" size="25.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="guides" layoutX="90.0" layoutY="10.0" onMouseClicked="#handleGuidesClick" prefHeight="50.0" prefWidth="237.0" style="-fx-cursor: hand;" styleClass="menu-item" text="🚶‍♂️ Guides" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Kosugi Regular" size="25.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="bookings" layoutX="78.0" layoutY="36.0" onMouseClicked="#handleBookingsClick" prefHeight="51.0" prefWidth="237.0" style="-fx-background-color: rgba(255,255,255,0.2); -fx-background-radius: 5;" styleClass="menu-item" text="🧾 Bookings" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Kosugi Regular" size="25.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="attractions" layoutX="65.0" layoutY="61.0" onMouseClicked="#handleAttractionsClick" prefHeight="50.0" prefWidth="237.0" styleClass="menu-item" text="⛰  Attractions" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Kosugi Regular" size="25.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="reports" layoutX="20.0" layoutY="204.0" onMouseClicked="#handleReportsClick" prefHeight="50.0" prefWidth="237.0" styleClass="menu-item" text="📊  Reports" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Kosugi Regular" size="25.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="admin" layoutX="20.0" layoutY="264.0" onMouseClicked="#handleAdminClick" prefHeight="50.0" prefWidth="237.0" styleClass="menu-item" text="👨🏻‍💻 Admin" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Kosugi Regular" size="25.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="CENTER" layoutX="14.0" layoutY="639.0" prefHeight="72.0" prefWidth="258.0" spacing="10.0">
+               <children>
+                  <Label fx:id="alerts" onMouseClicked="#handleAlertsClick" prefHeight="34.0" prefWidth="69.0" styleClass="menu-item" text="⚠ Alerts" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="3.0" right="3.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="settings" layoutX="10.0" layoutY="10.0" onMouseClicked="#handleSettingsClick" prefHeight="37.0" prefWidth="85.0" styleClass="menu-item" text="⚙ Settings" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="3.0" right="3.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="logout" layoutX="73.0" layoutY="10.0" onMouseClicked="#handleLogoutClick" prefHeight="34.0" prefWidth="79.0" styleClass="menu-item" text="⍈ Logout" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="3.0" right="3.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="720.0" prefWidth="967.0" style="-fx-background-color: #f7dec6;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="135.0" prefWidth="994.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="7.0" text="YATRISATHI" textFill="#8c4518">
+                     <font>
+                        <Font name="Koulen Regular" size="44.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="55.0" layoutY="65.0" text="Guiding Every Step In Nepal" textFill="#243020">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="63.0" fitWidth="101.0" layoutX="220.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <HBox layoutX="57.0" layoutY="131.0" prefHeight="166.0" prefWidth="881.0" spacing="41.0" visible="false">
+               <children>
+                  <FlowPane fx:id="tourists_card" prefHeight="166.0" prefWidth="265.0" style="-fx-background-color: E7C6A7; -fx-background-radius: 15;">
+                     <children>
+                        <Label text="Active Tourists" textFill="#c15b1c">
+                           <font>
+                              <Font name="Kosugi Regular" size="19.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" top="15.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="total_tourists" layoutX="10.0" layoutY="10.0" prefHeight="78.0" prefWidth="181.0" text="1000" textFill="WHITE">
+                           <font>
+                              <Font name="Kosugi Regular" size="48.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="20.0" left="35.0" right="35.0" top="20.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" text="Currently in Nepal" textFill="#3f533a">
+                           <font>
+                              <Font name="Kosugi Regular" size="19.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" top="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </FlowPane>
+                  <FlowPane fx:id="guides_card" layoutX="10.0" layoutY="10.0" prefHeight="166.0" prefWidth="265.0" style="-fx-background-color: E7C6A7; -fx-background-radius: 15;">
+                     <children>
+                        <Label text="Certified Guides" textFill="#c15b1c">
+                           <font>
+                              <Font name="Kosugi Regular" size="19.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" top="15.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="total_guides" prefHeight="78.0" prefWidth="181.0" text="1000" textFill="WHITE">
+                           <font>
+                              <Font name="Kosugi Regular" size="48.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="20.0" left="35.0" right="35.0" top="20.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Available Today" textFill="#3f533a">
+                           <font>
+                              <Font name="Kosugi Regular" size="19.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" top="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </FlowPane>
+                  <FlowPane fx:id="attractions_card" layoutX="268.0" layoutY="10.0" prefHeight="166.0" prefWidth="265.0" style="-fx-background-color: E7C6A7; -fx-background-radius: 15;">
+                     <children>
+                        <Label text="Popular Attractions" textFill="#c15b1c">
+                           <font>
+                              <Font name="Kosugi Regular" size="19.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" top="15.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="total_attractions" prefHeight="78.0" prefWidth="181.0" text="1000" textFill="WHITE">
+                           <font>
+                              <Font name="Kosugi Regular" size="48.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="20.0" left="35.0" right="35.0" top="20.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Registered Places" textFill="#3f533a">
+                           <font>
+                              <Font name="Kosugi Regular" size="19.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" top="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </FlowPane>
+               </children>
+            </HBox>
+            <VBox layoutX="59.0" layoutY="321.0" prefHeight="152.0" prefWidth="265.0" visible="false">
+               <children>
+                  <FlowPane prefHeight="152.0" prefWidth="260.0" style="-fx-background-color: E7C6A7; -fx-background-radius: 15;">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="151.0" text="Your Stats" textFill="#c15b1c">
+                           <font>
+                              <Font name="Kosugi Regular" size="19.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" top="15.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="switch_user" onMouseClicked="#SwitchUser" prefHeight="16.0" prefWidth="19.0" text="🔃" textFill="#c15b1c" visible="false">
+                           <font>
+                              <Font name="Kosugi Regular" size="19.0" />
+                           </font>
+                           <FlowPane.margin>
+                              <Insets left="75.0" top="15.0" />
+                           </FlowPane.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="stats_tours" prefHeight="26.0" prefWidth="151.0" text="Total Tours:" textFill="#3f533a">
+                           <font>
+                              <Font name="Kosugi Regular" size="19.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="20.0" right="5.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="stats_upcomming" layoutX="10.0" layoutY="47.0" prefHeight="26.0" prefWidth="151.0" text="Upcomming  :" textFill="#3f533a">
+                           <font>
+                              <Font name="Kosugi Regular" size="19.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="20.0" right="5.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="stats_next_date" layoutX="10.0" layoutY="73.0" prefHeight="26.0" prefWidth="151.0" text="Next Date  :" textFill="#3f533a">
+                           <font>
+                              <Font name="Kosugi Regular" size="19.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="20.0" right="5.0" top="8.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </FlowPane>
+               </children>
+            </VBox>
+            <VBox layoutX="58.0" layoutY="496.0" prefHeight="202.0" prefWidth="887.0" style="-fx-background-color: E7C6A7; -fx-background-radius: 15;" visible="false">
+               <children>
+                  <Label text="Recent Booking" textFill="#8c4518">
+                     <font>
+                        <Font name="Kosugi Regular" size="28.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <VBox prefHeight="131.0" prefWidth="780.0" style="-fx-background-color: #f5dcc4; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="recent_booking_title" prefHeight="38.0" prefWidth="266.0" style="-fx-opacity: 600;" text="Annapurna Base Camp">
+                           <font>
+                              <Font name="Kosugi Regular" size="22.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="recent_booking_guide" prefHeight="26.0" prefWidth="97.0" text="Guide   :">
+                           <font>
+                              <Font name="Kosugi Regular" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="recent_booking_date" layoutX="10.0" layoutY="53.0" prefHeight="26.0" prefWidth="97.0" text="Date    :">
+                           <font>
+                              <Font name="Kosugi Regular" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="recent_booking_location" layoutX="10.0" layoutY="80.0" prefHeight="26.0" prefWidth="97.0" text="Location:">
+                           <font>
+                              <Font name="Kosugi Regular" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <AnchorPane layoutX="67.0" layoutY="150.0" prefHeight="530.0" prefWidth="858.0" style="-fx-background-color: #d1b397; -fx-background-radius: 10;">
+               <children>
+                  <FlowPane layoutX="22.0" layoutY="40.0" prefHeight="474.0" prefWidth="818.0" style="-fx-background-color: #b8997d; -fx-background-radius: 10;">
+                     <children>
+                        <TextField fx:id="BookingSearch" prefHeight="38.0" prefWidth="286.0" promptText="⌕ Search" style="-fx-background-radius: 10;">
+                           <FlowPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </FlowPane.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <ChoiceBox fx:id="LocationSort" prefHeight="26.0" prefWidth="108.0" style="-fx-background-radius: 10; -fx-background-color: #ffffff;">
+                           <FlowPane.margin>
+                              <Insets bottom="10.0" right="10.0" top="10.0" />
+                           </FlowPane.margin>
+                        </ChoiceBox>
+                        <ChoiceBox fx:id="Sort" layoutX="282.0" layoutY="25.0" prefHeight="26.0" prefWidth="102.0" style="-fx-background-radius: 10; -fx-background-color: #ffffff;" />
+
+                        <GridPane fx:id="GuidePanel" focusTraversable="true" prefHeight="91.0" prefWidth="786.0" style="-fx-background-color: #5C5650; -fx-background-radius: 15;">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="678.4" minWidth="3.9999801635742074" prefWidth="626.2001342773438" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="312.0000198364258" minWidth="0.0" prefWidth="159.79986572265625" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="51.80000610351563" minHeight="10.0" prefHeight="46.2" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="69.40000190734864" minHeight="10.0" prefHeight="44.60000000000001" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="BookingName" prefHeight="18.0" prefWidth="603.0" text="Annapurna Base Camp" textFill="#f7f7f7">
+                                 <font>
+                                    <Font name="Kosugi Regular" size="18.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="30.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Button fx:id="CancelButton" mnemonicParsing="false" onMouseClicked="#handleBookingCancellation" prefHeight="27.0" prefWidth="134.0" style="-fx-background-color: #CBA178; -fx-background-radius: 12;" text="Cancel" textFill="WHITE" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="15.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <FlowPane prefHeight="45.0" prefWidth="623.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label layoutX="40.0" layoutY="10.0" text="Location:" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets left="30.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="BookingLocation" layoutX="192.0" layoutY="10.0" prefHeight="15.0" prefWidth="132.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="83.0" layoutY="10.0" text="Guide:" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="BookingGuide" layoutX="319.0" layoutY="10.0" prefHeight="15.0" prefWidth="206.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="GuideRaters11" layoutX="279.0" layoutY="10.0" prefHeight="15.0" prefWidth="152.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="146.0" layoutY="10.0" text="Date:" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets left="30.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="BookingDate" layoutX="60.0" layoutY="25.0" prefHeight="15.0" prefWidth="160.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="25.0" text="Status:" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="BookingStatus" layoutX="76.0" layoutY="25.0" prefHeight="15.0" prefWidth="160.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                           </children>
+                           <FlowPane.margin>
+                              <Insets left="15.0" />
+                           </FlowPane.margin>
+                        </GridPane>
+                        <GridPane fx:id="GuidePanel1" focusTraversable="true" prefHeight="91.0" prefWidth="786.0" style="-fx-background-color: #5C5650; -fx-background-radius: 15;">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="678.4" minWidth="3.9999801635742074" prefWidth="626.2001342773438" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="312.0000198364258" minWidth="0.0" prefWidth="159.79986572265625" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="51.80000610351563" minHeight="10.0" prefHeight="46.2" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="69.40000190734864" minHeight="10.0" prefHeight="44.60000000000001" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="BookingName1" prefHeight="18.0" prefWidth="606.0" text="Annapurna Base Camp" textFill="#f7f7f7">
+                                 <font>
+                                    <Font name="Kosugi Regular" size="18.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="30.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Button fx:id="CancelButton1" mnemonicParsing="false" onMouseClicked="#handleBookingCancellation" prefHeight="27.0" prefWidth="134.0" style="-fx-background-color: #CBA178; -fx-background-radius: 12;" text="Cancel" textFill="WHITE" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="15.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <FlowPane prefHeight="49.0" prefWidth="596.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label layoutX="40.0" layoutY="10.0" text="Location:" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets left="30.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="BookingLocation1" layoutX="192.0" layoutY="10.0" prefHeight="15.0" prefWidth="132.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="83.0" layoutY="10.0" text="Guide:" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="BookingGuide1" layoutX="319.0" layoutY="10.0" prefHeight="15.0" prefWidth="151.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="GuideRaters111" layoutX="279.0" layoutY="10.0" prefHeight="15.0" prefWidth="174.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="146.0" layoutY="10.0" text="Date:" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets left="30.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="BookingDate1" layoutX="60.0" layoutY="25.0" prefHeight="15.0" prefWidth="160.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="25.0" text="Status:" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="BookingStatus1" layoutX="76.0" layoutY="25.0" prefHeight="15.0" prefWidth="160.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                           </children>
+                           <FlowPane.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </FlowPane.margin>
+                        </GridPane>
+                        <GridPane fx:id="GuidePanel2" focusTraversable="true" prefHeight="91.0" prefWidth="786.0" style="-fx-background-color: #5C5650; -fx-background-radius: 15;">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="678.4" minWidth="3.9999801635742074" prefWidth="626.2001342773438" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="312.0000198364258" minWidth="0.0" prefWidth="159.79986572265625" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="51.80000610351563" minHeight="10.0" prefHeight="46.2" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="69.40000190734864" minHeight="10.0" prefHeight="44.60000000000001" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="BookingName2" prefHeight="18.0" prefWidth="606.0" text="Annapurna Base Camp" textFill="#f7f7f7">
+                                 <font>
+                                    <Font name="Kosugi Regular" size="18.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="30.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Button fx:id="CancelButton2" mnemonicParsing="false" onMouseClicked="#handleBookingCancellation" prefHeight="27.0" prefWidth="134.0" style="-fx-background-color: #CBA178; -fx-background-radius: 12;" text="Cancel" textFill="WHITE" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="15.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <FlowPane prefHeight="49.0" prefWidth="596.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label layoutX="40.0" layoutY="10.0" text="Location:" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets left="30.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="BookingLocation2" layoutX="192.0" layoutY="10.0" prefHeight="15.0" prefWidth="132.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="83.0" layoutY="10.0" text="Guide:" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="BookingGuide2" layoutX="319.0" layoutY="10.0" prefHeight="15.0" prefWidth="151.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="GuideRaters112" layoutX="279.0" layoutY="10.0" prefHeight="15.0" prefWidth="174.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="146.0" layoutY="10.0" text="Date:" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets left="30.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="BookingDate2" layoutX="60.0" layoutY="25.0" prefHeight="15.0" prefWidth="160.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="25.0" text="Status:" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="BookingStatus2" layoutX="76.0" layoutY="25.0" prefHeight="15.0" prefWidth="160.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                           </children>
+                           <FlowPane.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </FlowPane.margin>
+                        </GridPane>
+                        <GridPane fx:id="GuidePanel3" focusTraversable="true" prefHeight="91.0" prefWidth="786.0" style="-fx-background-color: #5C5650; -fx-background-radius: 15;">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="678.4" minWidth="3.9999801635742074" prefWidth="626.2001342773438" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="312.0000198364258" minWidth="0.0" prefWidth="159.79986572265625" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="51.80000610351563" minHeight="10.0" prefHeight="46.2" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="69.40000190734864" minHeight="10.0" prefHeight="44.60000000000001" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="BookingName3" prefHeight="18.0" prefWidth="604.0" text="Annapurna Base Camp" textFill="#f7f7f7">
+                                 <font>
+                                    <Font name="Kosugi Regular" size="18.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="30.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Button fx:id="CancelButton3" mnemonicParsing="false" onMouseClicked="#handleBookingCancellation" prefHeight="27.0" prefWidth="134.0" style="-fx-background-color: #CBA178; -fx-background-radius: 12;" text="Cancel" textFill="WHITE" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="15.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <FlowPane prefHeight="49.0" prefWidth="596.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label layoutX="40.0" layoutY="10.0" text="Location:" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets left="30.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="BookingLocation3" layoutX="192.0" layoutY="10.0" prefHeight="15.0" prefWidth="132.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="83.0" layoutY="10.0" text="Guide:" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="BookingGuide3" layoutX="319.0" layoutY="10.0" prefHeight="15.0" prefWidth="151.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="GuideRaters113" layoutX="279.0" layoutY="10.0" prefHeight="15.0" prefWidth="174.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="146.0" layoutY="10.0" text="Date:" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets left="30.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label fx:id="BookingDate3" layoutX="60.0" layoutY="25.0" prefHeight="15.0" prefWidth="160.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="25.0" text="Status:" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="BookingStatus3" layoutX="76.0" layoutY="25.0" prefHeight="15.0" prefWidth="160.0" textFill="#fafce3">
+                                       <font>
+                                          <Font name="Kosugi Regular" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                           </children>
+                           <FlowPane.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </FlowPane.margin>
+                        </GridPane>
+                     </children>
+                  </FlowPane>
+                  <Label layoutX="25.0" layoutY="13.0" text="My Bookings">
+                     <font>
+                        <Font name="Kosugi Regular" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView disable="true" fitHeight="719.0" fitWidth="994.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Rectangle%203.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

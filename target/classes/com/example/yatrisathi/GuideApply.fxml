@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="431.0" prefWidth="544.0" style="-fx-background-color: #465B4A;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.yatrisathi.GuideApplyController">
+   <children>
+      <TextField fx:id="FirstName" layoutX="78.0" layoutY="118.0" opacity="0.43" prefHeight="38.0" prefWidth="175.0" promptText="John" style="-fx-background-color: #D9D9D9;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="Apply" alignment="CENTER" contentDisplay="CENTER" layoutX="414.0" layoutY="365.0" onMouseClicked="#handelSend" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #FEDDBE; -fx-background-radius: 10;" text="Send" textAlignment="CENTER" textFill="#403f3f">
+         <font>
+            <Font name="Kosugi Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="96.0" text="First Name" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="24.0" text="Apply Guide" textFill="WHITE">
+         <font>
+            <Font name="Kosugi Regular" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="warning" alignment="CENTER" layoutX="186.0" layoutY="259.0" prefHeight="22.0" prefWidth="172.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Address" layoutX="76.0" layoutY="194.0" opacity="0.43" prefHeight="38.0" prefWidth="175.0" promptText="Haidgaun" style="-fx-background-color: #D9D9D9;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="76.0" layoutY="172.0" text="Address" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="255.0" text="Location" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="172.0" text="Images" textFill="WHITE" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="Loation" layoutX="76.0" layoutY="277.0" prefHeight="38.0" prefWidth="175.0" />
+      <TextField fx:id="Number" layoutX="286.0" layoutY="196.0" opacity="0.43" prefHeight="38.0" prefWidth="175.0" promptText="1234567890" style="-fx-background-color: #D9D9D9;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="286.0" layoutY="174.0" text="Number" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Certification" alignment="CENTER" contentDisplay="CENTER" layoutX="286.0" layoutY="281.0" onMouseClicked="#handelCertification" prefHeight="35.0" prefWidth="162.0" style="-fx-background-color: #FEDDBE; -fx-background-radius: 10;" text="Upload" textAlignment="CENTER" textFill="#403f3f">
+         <font>
+            <Font name="Kosugi Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="287.0" layoutY="259.0" text="Certification" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="LastName" layoutX="286.0" layoutY="118.0" opacity="0.43" prefHeight="38.0" prefWidth="175.0" promptText="John" style="-fx-background-color: #D9D9D9;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="286.0" layoutY="96.0" text="Last Name" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

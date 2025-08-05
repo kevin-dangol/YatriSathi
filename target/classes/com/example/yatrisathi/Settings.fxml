@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="339.0" prefWidth="530.0" style="-fx-background-color: #465B4A;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.yatrisathi.SettingsController">
+   <children>
+      <TextField fx:id="Username" layoutX="78.0" layoutY="118.0" opacity="0.43" prefHeight="38.0" prefWidth="175.0" promptText="John" style="-fx-background-color: #D9D9D9;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="Save" alignment="CENTER" contentDisplay="CENTER" layoutX="414.0" layoutY="281.0" onMouseClicked="#handelSave" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #FEDDBE; -fx-background-radius: 10;" text="Save" textAlignment="CENTER" textFill="#403f3f">
+         <font>
+            <Font name="Kosugi Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="96.0" text="Username" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="24.0" text="Settings" textFill="WHITE">
+         <font>
+            <Font name="Kosugi Regular" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="warning" alignment="CENTER" layoutX="186.0" layoutY="259.0" prefHeight="22.0" prefWidth="172.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="287.0" layoutY="172.0" text="Language" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="172.0" text="Images" textFill="WHITE" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="Language" layoutX="286.0" layoutY="194.0" prefHeight="38.0" prefWidth="175.0" />
+      <TextField fx:id="Email" layoutX="286.0" layoutY="118.0" opacity="0.43" prefHeight="38.0" prefWidth="175.0" promptText="john@gmail.com" style="-fx-background-color: #D9D9D9;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="286.0" layoutY="96.0" text="Email" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Number" layoutX="78.0" layoutY="194.0" opacity="0.43" prefHeight="38.0" prefWidth="175.0" promptText="1234567890" style="-fx-background-color: #D9D9D9;" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="78.0" layoutY="172.0" text="Number" textFill="WHITE" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="GuideApply" alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="195.0" onMouseClicked="#handelApply" prefHeight="38.0" prefWidth="175.0" style="-fx-background-color: #FEDDBE; -fx-background-radius: 10;" text="Apply" textAlignment="CENTER" textFill="#403f3f">
+         <font>
+            <Font name="Kosugi Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="172.0" text="Apply For Guide" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+
+
+   </children>
+</AnchorPane>
