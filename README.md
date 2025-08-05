@@ -1,5 +1,5 @@
 # YatriSathi
-A Tourism concept app with a local data storage functionality.
+A Tourism concept app with a local data storage functionality made using JavaFX.
 
 # Features
 - Login and signup features with authorities
@@ -15,6 +15,6 @@ A Tourism concept app with a local data storage functionality.
 # How to use
 1. Download the .zip file from the release (the latest one).
 2. Unzip the file and locate the HelloApplication.java.
-3. Open the HelloApplication.java in COde Compiler and run it..
+3. Open the HelloApplication.java in Code Compiler and run it.
 
 **Note that the App is only a concept app hence some funcitonality like the Guide's are not fully functional**
